@@ -24,7 +24,7 @@ df <-bbdd |>
 
 ### We exclude all people with FOPNL = 3 (consideration of warning labels) to compare only those with FOPNL = 1 (no consideration of warning labels) and FOPNL = 2 (consideration of warning labels)
 df <- df %>%
-  filter(FOPLN != "3") ### filtramos todas personas con sellos 3 
+  filter(FOPLN != "3") ###  We filter people with "3" category, and we excluded this group.
 
 
 #=================================================
