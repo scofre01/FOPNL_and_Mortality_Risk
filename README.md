@@ -14,5 +14,8 @@ Sustained adherence to front-of-package nutritional labels is associated with a 
 
 ### Acknowledges
 Acknowledgements to the Chilean Ministry of Health and Doctoral National Scholarship by ANID 
-Ethical Considerations — IRB, data privacy, and access instructions
-Citation, Authors, License, and Acknowledgements
+
+### Data availability 
+All relevant data are provided within the manuscript and the code used can be found in the following GitHub repository: https://github.com/scofre01/FOPNL_and_Mortality_Risk  
+
+
