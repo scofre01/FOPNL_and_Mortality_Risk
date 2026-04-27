@@ -17,5 +17,5 @@ Acknowledgements to the Chilean Ministry of Health and Doctoral National Scholar
 
 ### Data availability 
 All relevant data are provided within the manuscript and the code used can be found in the following GitHub repository: https://github.com/scofre01/FOPNL_and_Mortality_Risk  
-
+The repository contains the file called "Data Analysis.R" , which outlines the procedures associated with TMLE, AIPW, and IPWT.
 
