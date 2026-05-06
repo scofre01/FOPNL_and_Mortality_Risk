@@ -1,7 +1,7 @@
 # Can Public Health Food Labels Prevent Deaths? Estimating the Marginal Causal Effect of Adhering to Front-of- Package Nutritional Warnings on Mortality Risk
 
 ## Background: 
-Chronic non-communicable diseases (NCDs), account for a growing proportion of global mortality, with dietary factors identified as major modifiable determinants. Front-of-package nutrition labelling (FOPNL) systems have been implemented in several Latin American jurisdictions as a regulatory strategy to promote healthier food purchasing decisions. Nevertheless, evidence on their downstream effects on hard clinical endpoints remains scarce.
+Chronic non-communicable diseases (NCDs), account for a growing proportion of global mortality, with dietary factors identified as major modifiable determinants. Front-of-package nutrition labelling (FOPNL) systems have been implemented in several Latin American jurisdictions as a regulatory strategy to promote healthier food purchasing decisions. Nevertheless, evidence regarding its long-term effects and more severe clinical outcomes remains limited.
 
 ## Methods
 We conducted a prospective cohort study using data from the Chilean National Health Survey 2016–2017 (n = 5,625), linked to national death records. Participants were classified as FOPNL-adherent (n = 2,503) or non-adherent controls (n = 3,122) based on a semi-structured questionnaire of front-of-package label consultation during food purchasing. The outcome was five-year all-cause mortality. We estimated marginal causal effects using targeted maximum likelihood estimation (TMLE) as the primary estimator, complemented by augmented inverse probability weighting (AIPW) and inverse probability of treatment weighting (IPTW). 
