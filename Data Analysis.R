@@ -4,7 +4,6 @@
 
 #libraries
 library(dplyr)
-library(mice)
 library(naniar)
 library(AIPW)
 library(tmle)
@@ -81,7 +80,7 @@ a_tmle$result ### see results
 ##3. Estimation based on IPTW
 # Calculate  PS with WeightIt
 library(WeightIt)
-W.out <- weightit(FOPNL ~ Sex + Age +Education + DM+ Waist + pa + ethnicity+ alcohol+ HTN,
+W.out <- weightit(FOPNL ~ Sex + Age +Education + DM+ waist + pa + ethnicity+ alcohol+ HTN,
                   data = df,
                   method = "ps", # means propensity score
                   estimand = "ATE",
@@ -91,7 +90,7 @@ W.out <- weightit(FOPNL ~ Sex + Age +Education + DM+ Waist + pa + ethnicity+ alc
 bd$iptw_weights <- W.out$weights
 
 # We estimated the effect of the intervention (FOPNL) on the outcome (death) using a weighted logistic regression model.
-model_iptw <- glm(Event ~ FOPLN,
+model_iptw <- glm(Event ~ FOPNL,
                    data = df,
                    family = quasibinomial(),
                    weights = iptw_weights)
@@ -99,10 +98,10 @@ model_iptw <- glm(Event ~ FOPLN,
 summary(model_iptw)
 
 #  Extract the Odds Ratio
-or_iptw <- exp(coef(model_iptw)["FOPLNSi"])
-ci_iptw <- exp(confint(model_iptw)["FOPLNSi", ]) #with confidence intervals
+or_iptw <- exp(coef(model_iptw)["FOPNLSi"])
+ci_iptw <- exp(confint(model_iptw)["FOPNLSi", ]) #with confidence intervals
 
-###Results
+###Results with therir confidence intervals 
 cat("--- Results of Analysis based on IPTW ---\n")
 cat(sprintf("Odds Ratio (OR) estimated: %.3f\n", or_iptw))
 cat(sprintf("95% CI: [%.3f, %.3f]\n\n", ci_iptw[1], ci_iptw[2]))
