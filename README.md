@@ -12,7 +12,7 @@ Five-year all-cause mortality was significantly lower among FOPNL-adherent parti
 ## Conclusions: 
 Sustained adherence to front-of-package nutritional labels is associated with a significant reduction in all-cause mortality risk, under the stated causal assumptions. These findings provide epidemiological evidence supporting the implementation of regulations on FOPNL to guide dietary behavior and prevent chronic diseases.
 
-### Acknowledges
+### Acknowledgment
 Acknowledgements to the Chilean Ministry of Health and Doctoral National Scholarship by ANID 
 
 ### Data availability 
